@@ -23,6 +23,17 @@ MAC = C（K，M）
 · 一般来说，MAC函数与加密类似，但是MAC算法要求不可逆，而加密算法必须是可逆的
 
 ### 常用的MAC算法
+
+#### HMAC
+
+	‣ HMAC-SHA256
+	‣ HMAC-SM3
+
+#### CMAC
+
+	‣ AES-128-CMAC
+	‣ SM4-CMAC
+
 #### HMAC
 · HAMAC是基于hash算法的消息认证码
 
@@ -80,4 +91,12 @@ CBC-MAC对于可变长度的消息是不安全的
 4. 独立进行加密和认证。
 
 ```
+GCM (Galois/Counter Mode): NIST SP 800-38D
+	‣ AES-128-GCM/AES-256-GCM
+	‣ SM4-GCM
 
+CCM (CTR + CBC-MAC Mode): NIST SP 800-38C
+
+ChaCha20-Poly1305 mode: RFC 7539
+
+OCB mode: RFC 7253
