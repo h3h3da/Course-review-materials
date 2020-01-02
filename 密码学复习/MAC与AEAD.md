@@ -91,7 +91,9 @@ CBC-MAC对于可变长度的消息是不安全的
 4. 独立进行加密和认证。
 
 ```
+
 GCM (Galois/Counter Mode): NIST SP 800-38D
+
 	‣ AES-128-GCM/AES-256-GCM
 	‣ SM4-GCM
 
