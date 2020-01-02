@@ -2,21 +2,23 @@
 
 ## RSA加密算法
 
-1. 生成素数p,q，令n=pq，$\phi(n) = (p-1)(q-1)$
-2. 选择e，使$gcd(e,\phi(n))=1$
-3. 计算$d = e^{-1}\pmod{\phi(n)}$
-4. 公钥：n、e
-5. 私钥：d、n
-6. 加密时，发送方计算$C = M^e\pmod{n}$
-7. 解密时，接收方计算$M = C^d\pmod{n} =M^{ed}\pmod{n} = M $
+生成素数p,q，令n=pq，![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibuzcm84j304m00i0kz.jpg)
+
+1. 选择e，使![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibw14pguj303g00i0iy.jpg)
+2. 计算![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibxeh824j304d00k0l6.jpg)
+3. 公钥：n、e
+4. 私钥：d、n
+5. 加密时，发送方计算![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibxtv5ecj303t00i0iw.jpg)
+6. 解密时，接收方计算![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibyaij0vj308n00k0ob.jpg)
 
 ## RSA签名
 
-1. 签名时计算$S = D^d$，D表示待签名的文档
-2. 验证时，计算$S^e$是否等于D
+1. 签名时计算![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibyse2qaj301n00g0aq.jpg)，D表示待签名的文档
+2. 验证时，计算![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibz9iwwhj300i00d07b.jpg)是否等于D
 3. RSA-PSS签名方案
 
 ## RSA的安全性
+
 RSA可能受到如下5种方式的攻击：
 
 · 穷举攻击：试图穷举所有可能的密钥
