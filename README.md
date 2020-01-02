@@ -14,6 +14,6 @@
 
 ## 贡献者
 
-[Louie](https://github.com/h3h3da) & [Henry](https://github.com/RyhenKao)
+[Louie](https://github.com/h3h3da) & [RyhenKao](https://github.com/RyhenKao)
 
 
