@@ -11,6 +11,37 @@
 5. 加密时，发送方计算![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibxtv5ecj303t00i0iw.jpg)
 6. 解密时，接收方计算![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibyaij0vj308n00k0ob.jpg)
 
+7. 例题
+
+```
+1. 在RSA算法中,已知p=3,q=11,公钥(加密密钥)e=7,明文M=5,求欧拉凼数fΦ(n) ; 私钥d 和密文C；
+
+解：
+n = pq = 33
+phi(n)=(p-1)(q-1) = 2 * 10 = 20
+ed = 1 mod (\phi(n))
+用扩展欧几里德可求出 d = 3 （直接看出来也可以.）
+加密 密文C = (M^e)mod n = (5^7)mod 20 = 5
+解密 明文M = (C^d)mod n = (5^3)mod 20 = 5
+
+2. RSA算法中,素数p=7,q=11,加密密钥e=7,计算解密密钥d
+
+解：
+N=pq=7*11=77
+(p-1)(q-1)=6*10=60
+根据公式d× e ≡ 1 (mod (p-1)(q-1))
+又e=7,所以 7*d≡ 1 (mod 60).即 7d mod 60 = 1.
+7x43=301.301除以6刚好余1.
+所以d=43
+
+3. 已知RSA算法中,素数p=5,q=7,模数n=35,公开密钥e=5,密文c=10,求明文m
+
+解：
+Φ(n)=4*6=24,设私钥为d,由de ≡ 1 mod 24,即5d ≡ 1 mod 24,得d=5；
+m = (c^d) mod 24 = 16
+```
+
+
 ## RSA签名
 
 1. 签名时计算![](https://tva1.sinaimg.cn/large/006tNbRwly1gaibyse2qaj301n00g0aq.jpg)，D表示待签名的文档
