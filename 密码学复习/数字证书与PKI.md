@@ -140,7 +140,7 @@ Desmedt 和 Frankel 在 1991 年提出了基于门限的群签名实现方案。
 
 · 生成私钥
 ```
-在PKG上输入系统参数params以及主密钥master-key以及用户ID（任意字符串作为公钥），生成用户私钥Did
+在PKG上输入系统参数params以及主密钥master-key以及用户ID（任意字符串作为公钥或者用于生成公钥），生成用户私钥Did
 ```
 
 · 加密
