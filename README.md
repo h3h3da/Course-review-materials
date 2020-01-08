@@ -6,6 +6,8 @@
 
 ## 云计算部分
 
+[Here](https://github.com/h3h3da/Course-review-materials/tree/master/cloud_computing)
+
 ## Java部分
 
 [Here](https://github.com/h3h3da/Course-review-materials/tree/master/Java)
