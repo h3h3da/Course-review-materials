@@ -50,7 +50,9 @@
 	流式计算：实时计算、时延较小；来一个处理一个；数据驱动计算请求；推式获取计算结果。
 11. 图的切分方式：
 	边切分，点切分：
+	
 	![](./img/0.png)
+
 12.	几种架构：
 
 	1) Spark：
@@ -61,6 +63,7 @@
 		executor：负责任务的执行
 		client：作为用户的客户端负责提交应用
 		driver：负责控制一个应用的执行
+		
 		运行流程：
 		
 		![](./img/1.png)
@@ -70,6 +73,7 @@
 		分布式流处理 && 实时的计算系统
 		同样采用master-slave体系结构，分布式计算由nimbus（主节点）和supervisor（工作节点）两类服务进程实现。nimbus和supervisor之间的协调通过zookeeper集群实现。
 		Storm中运行的一个应用是一个拓扑，对应Hadoop里的job。
+		
 		运行流程：
 		
 		![](./img/2.png)
@@ -86,6 +90,7 @@
 			Consumer需要指定隶属的consumer group
 			一个topic里的每条消息只能被用一个consumer group中的一个consumer消费，属于不同的group的consumer可以共同消费同一个topic的相同消息。
 			consumer group里的consumer和topic的partition按照id顺序进行消费。
+		
 		运行流程：
 		
 		![](./img/4.png)
