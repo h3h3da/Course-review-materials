@@ -131,7 +131,9 @@
 4     2     11
 4     3     12
 ```
-	矩阵B存储为
+
+矩阵B存储为
+
 ```
 1     1     10
 1     2     15
@@ -139,13 +141,14 @@
 3     1     11
 3     2     9
 ```
-	注意到，A[2, 3] = 0，B[2, 1] = 0，这样的值不会在文件中存储。
 
-	矩阵乘法要求左矩阵的列数与右矩阵的行数相等，m * n 的矩阵A，与n * l的矩阵B相乘，结果为m * l 的矩阵C。
-	map后的A'对应的每个<key, list(value)>对应有l对，B’对应的每个<key, list(value)>对应有m对，经过reduce之后对应位置数据相乘在相加即为最终C矩阵中的值。
-	
-	![](./img/.8.png)
-	
-	Reference：
-	
-	[MapReduce实现大矩阵乘法](https://blog.csdn.net/xyilu/article/details/9066973)
+注意到，A[2, 3] = 0，B[2, 1] = 0，这样的值不会在文件中存储。
+
+矩阵乘法要求左矩阵的列数与右矩阵的行数相等，m * n 的矩阵A，与n * l的矩阵B相乘，结果为m * l 的矩阵C。
+map后的A'对应的每个<key, list(value)>对应有l对，B’对应的每个<key, list(value)>对应有m对，经过reduce之后对应位置数据相乘在相加即为最终C矩阵中的值。
+
+![](./img/.8.png)
+
+Reference：
+
+[MapReduce实现大矩阵乘法](https://blog.csdn.net/xyilu/article/details/9066973)
