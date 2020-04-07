@@ -138,3 +138,22 @@
 	跟踪调试法：是通过跟踪恶意代码执行过程使用的系统函数和指令特征分析恶意代码功能的技术。
 
 ### 恶意代码防范措施
+
+## FAT文件系统
+
+FAT文件系统构成
+MBR－主引导记录（Main Boot Record）
+DBR－系统引导记录（Dos Boot Record）
+FAT－文件分配表（File Allocation Table）
+FDT－文件目录表（File Directory Table）
+DATA－数据区
+
+## 如果系统有很多小文件，簇分得大点好还是小点好？
+小点好
+
+## FAT和NTFS的区别
+
+FAT32支持分区的大小最大为32GB，NTFS支持的分区大小可以达到2TB
+
+NTFS支持对分区、文件夹和文件的压缩。FAT32分区能够在DOS下直接访问，NTFS分区不能直接访问。
+
